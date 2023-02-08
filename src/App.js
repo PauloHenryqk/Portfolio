@@ -1,14 +1,10 @@
 import React from 'react'
-import Header from './components /Header/index'
-import Test from './components /Footer/index'
+import Header from './components /Header/index.js'
 
 function App() {
   return (
-    <>
     <Header />
-    <Test />
-    </>
-  );
+  )
 }
 
 export default App;

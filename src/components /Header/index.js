@@ -1,27 +1,30 @@
+import React, { Component } from "react"
+
 function Header() {
     return (
        <>
-        <nav>
+
+        <Nav>
                  
             <ul id="socialMedias">
                 <li id="linkedIn">
                     <a href="https://www.linkedin.com/in/paulo-henryqk-7a1b08231"  tabindex="0">
-                        <ion-icon class="socialMediasIcon" name="logo-linkedin"></ion-icon>
+                        <ion-icon className="socialMediasIcon" name="logo-linkedin"></ion-icon>
                     </a>
                 </li>
                 <li id="gmail">
                     <a href="mailto:paulohenryqkoficial@gmail.com"  tabindex="0">
-                        <ion-icon class="socialMediasIcon" name="mail-outline"></ion-icon>
+                        <ion-icon className="socialMediasIcon" name="mail-outline"></ion-icon>
                     </a>
                 </li>
                 <li id="github">
                     <a href="https://github.com/EaiPh"  tabindex="0">
-                       <ion-icon class="socialMediasIcon" name="logo-github"></ion-icon>
+                       <ion-icon className="socialMediasIcon" name="logo-github"></ion-icon>
                     </a>
                 </li>
                 <li id="instagram">
                     <a href="https://instagram.com/paulo_henryqk"  tabindex="0">
-                        <ion-icon class="socialMediasIcon" name="logo-instagram"></ion-icon>
+                        <ion-icon className="socialMediasIcon" name="logo-instagram"></ion-icon>
                     </a>
                 </li>
             </ul>
@@ -42,7 +45,7 @@ function Header() {
                </ul>
             </aside>
 
-        </nav>
+        </Nav>
         <div id="presentation">
            <h1>Paulo Henrique</h1>
            <small>Sou Desenvolvedor web, iniciei meus estudos
@@ -50,6 +53,7 @@ function Header() {
            </br>estou estudando com foco em Desenvolvimento Web.
             </small>
         </div>
+
        </>
 
     )
