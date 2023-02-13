@@ -1,9 +1,9 @@
 //import React, { Component } from "react"
-import "./style"
+import { HeaderStyle } from "./style"
 
 function Header() {
     return (
-       <header>
+       <HeaderStyle>
            <nav>
 
                <ul id="socialMedias">
@@ -58,7 +58,7 @@ function Header() {
                </small>
            </div>
 
-       </header>
+       </HeaderStyle>
     )
 }
 
