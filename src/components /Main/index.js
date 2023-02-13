@@ -1,4 +1,4 @@
-import MainStyle from  "./style"
+import { MainStyle } from  "./style"
 
 function Main() {
    return (
