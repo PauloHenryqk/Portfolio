@@ -1,3 +1,4 @@
+import { knowledge, daily, projects } from "../../data/data"
 import { MainStyle } from  "./style"
 
 function Main() {
@@ -9,31 +10,9 @@ function Main() {
            <h2>Possuo conhecimento nas tecnologias</h2>
             <section className="techs">
 
-               <div id="html" className="cardTech">
-                  <div className="techName">Html</div>
-                  <p>sou capaz de estruturar uma página web para ser estilizada de forma fácil e eficiente,
-                  com tags semânticas e adicionar acessibilidade ao Web site...</p>
-               </div>
-               <div id="css" className="cardTech" >
-                  <div className="techName">Css</div>
-                  <p>sou capaz de estilizar, criar animações e aplicar responsividade as páginasweb...</p>
-               </div>
-               <div id="js" className="cardTech">
-                  <div className="techName">JavaScript</div>
-                  <p>sou capaz de criar a dinâmica completa de um web site,
-                  quebrar grandes problemas em pequenas partes para melhor resolução...</p>
-               </div>
-               <div id="reactJs" className="cardTech row2 studing">
-                  <div className="techName">React.Js</div>
-                  <p>Estudando...</p>
-               </div>
-               <div id="nodeJs" className="cardTech row2 studing">
-                  <div className="techName">Node.js</div>
-                  <p>Estudando...</p>
-               </div>
-               <div id="fireBase" className="cardTech row2 studing">
-                  <div className="techName">Fire base</div>
-                  <p>Estudando...</p>
+               <div key={knowledge.map(i => i.tech)} id={knowledge.map(i => i.tech)} className="cardTech">
+                  <div className="techName">{knowledge.map(i => i.tech)}</div>
+                  <p>{knowledge.map(i => i.msg)}</p>
                </div>
 
             </section>
@@ -43,6 +22,8 @@ function Main() {
             </div>
 
          </div>
+
+
          <div id="certificationsAndDifferences">
 
             <section>
@@ -68,24 +49,14 @@ function Main() {
 
             <h2>Oque eu faço</h2>
             <div className="container">
-               <div className="card">
-                  <div id="imgSchool">
-                     <img src="assets/imagens/ensinoMedioImg.png" alt="foto estudante" />
+
+               <div key={daily.map(i => i.name.trim())} className="card">
+                  <div id={daily.map(i => i.name)}>
+                     <img src={`../../assets/imagens/${daily.map(i => i.img)}`} alt="foto de coisas que faço diarimente" />
                   </div>
-                  <div>Ensino médio</div>
+                  <div>{daily.map(i => i.name)}</div>
                </div>
-               <div className="card">
-                  <div id="imgCourse">
-                     <img src="assets/imagens/img-Curso.png" alt="logo prog br" />
-                  </div>
-                  <div>Curso</div>
-               </div>
-               <div className="card">
-                  <div id="imgEnglish">
-                     <img src="assets/imagens/worldImg.png" alt="foto mundo" />
-                  </div>
-                  <div>Estudo Inglês</div>
-               </div>
+
             </div>
 
          </div>
