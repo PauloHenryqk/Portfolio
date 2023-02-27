@@ -49,7 +49,7 @@ function Main() {
             <div className="container">
 
                <div key={daily.map(i => i.name.trim())} className="card">
-                  <div id={daily.map(i => i.name)}>
+                  <div id={daily.map(i => i.name.trim())}>
                      <img src={`../../assets/imagens/${daily.map(i => i.img)}`} alt="foto de coisas que faço diarimente" />
                   </div>
                   <div>{daily.map(i => i.name)}</div>
@@ -66,7 +66,7 @@ function Main() {
             </div>
             <div id="containerProject">
 
-               <div className="projetos" tabindex="0">
+               <div key={projects.map(i => i.name.trim())} className="projetos" tabindex="0">
                   <div>
                      <a href={projects.map(i => i.gitlink)} rel="noreferrer" target="_blank">
                         <img src={`/assets/imagens/${projects.map(i => i.img)}}`} alt="foto dos projeto" />
