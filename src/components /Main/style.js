@@ -24,6 +24,8 @@ export const MainStyle = styled.main `
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
+
+      background-color: blue;
    }
 
    .cardTech {
@@ -32,7 +34,10 @@ export const MainStyle = styled.main `
       padding: .6rem;
       border: 1px solid #dbdcde;
       margin: 1.5rem;
+      /* flex: none; */
       color: var(--primary-color);
+
+      background-color: red;
    }
 
    .techName {
