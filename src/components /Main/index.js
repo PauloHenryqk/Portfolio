@@ -9,12 +9,15 @@ function Main() {
 
            <h2>Possuo conhecimento nas tecnologias</h2>
             <section className="techs">
-
-               <div key={knowledge.map(i => i.tech)} id={knowledge.map(i => i.tech)} className="cardTech">
-                  <div className="techName">{knowledge.map(i => i.tech)}</div>
-                  <p>{knowledge.map(i => i.msg)}</p>
-               </div>
-
+               { knowledge.map((tech, index)=>{
+                  return (
+                     <div key={index} id={tech.name} className="cardTech">
+                        <div className="techName">{tech.name}</div>
+                        <p>{tech.msg}</p>
+                     </div>
+                  )                   
+                  })
+               }
             </section>
             <div id="seeMore" tabindex="0">
                veja mais
@@ -47,16 +50,18 @@ function Main() {
 
             <h2>Oque eu faço</h2>
             <div className="container">
-
-               <div key={daily.map(i => i.name.trim())} className="card">
-                  <div id={daily.map(i => i.name.trim())}>
-                     <img src={`../../assets/imagens/${daily.map(i => i.img)}`} alt="foto de coisas que faço diarimente" />
-                  </div>
-                  <div>{daily.map(i => i.name)}</div>
-               </div>
-
+               { daily.map((day, index) => {
+                  return ( 
+                     <div key={index} className="card">
+                        <div id={day.name}>
+                           <img src={`../../assets/imagens/${daily.map(i => i.img)}`} alt="foto de coisas que faço diarimente" />
+                           <div>{day.name}</div>
+                        </div>
+                     </div>
+                  )
+               })
+               }
             </div>
-
          </div>
          <div id="whatIdone">
             

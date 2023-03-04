@@ -1,10 +1,10 @@
 export const knowledge= [
-        {tech: "Html", msg:"sou capaz de estruturar uma página web para ser estilizada de forma fácil e eficiente, com tags semânticas e adicionar acessibilidade ao Web site..."},
-        {tech: "Css", msg:"sou capaz de estilizar, criar animações e aplicar responsividade as páginasweb..."},
-        {tech: "JavaScript", msg:"sou capaz de criar a dinâmica completa de um web site, quebrar grandes problemas em pequenas partes para melhor resolução..."},
-        {tech: "Firebase", msg:"Estudando..."},
-        {tech: "React", msg:"Estudando..."},
-        {tech: "Node.js", msg:"Estudando..."}
+        {name: "Html", msg:"sou capaz de estruturar uma página web para ser estilizada de forma fácil e eficiente, com tags semânticas e adicionar acessibilidade ao Web site..."},
+        {name: "Css", msg:"sou capaz de estilizar, criar animações e aplicar responsividade as páginasweb..."},
+        {name: "JavaScript", msg:"sou capaz de criar a dinâmica completa de um web site, quebrar grandes problemas em pequenas partes para melhor resolução..."},
+        {name: "Firebase", msg:"Estudando..."},
+        {name: "React", msg:"Estudando..."},
+        {name: "Node.js", msg:"Estudando..."}
     ]
 
 export const daily= [
