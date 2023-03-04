@@ -16,7 +16,7 @@ function Main() {
                         <p>{tech.msg}</p>
                      </div>
                   )                   
-                  })
+                 })
                }
             </section>
             <div id="seeMore" tabindex="0">
@@ -54,12 +54,12 @@ function Main() {
                   return ( 
                      <div key={index} className="card">
                         <div id={day.name}>
-                           <img src={`../../assets/imagens/${daily.map(i => i.img)}`} alt="foto de coisas que faço diarimente" />
+                           <img src={`../../assets/imagens/${day.img}`} alt="foto de coisas que faço diarimente" />
                            <div>{day.name}</div>
                         </div>
                      </div>
                   )
-               })
+                 })
                }
             </div>
          </div>
@@ -70,24 +70,41 @@ function Main() {
                <ion-icon className="arrows" id="arrowLeft" name="arrow-back-circle-outline"></ion-icon>
             </div>
             <div id="containerProject">
-
-               <div key={projects.map(i => i.name.trim())} className="projetos" tabindex="0">
+               { projects.map((project, index) => {
+                  return ( 
+                     <div key={index} className="projetos" tabindex="0">
+                        <div>
+                           <a href={project.gitlink} rel="noreferrer" target="_blank">
+                              <img src={`/assets/imagens/${project.img}`} alt="foto dos projeto" />
+                           </a>
+                        </div>
+                        <p>{project.name}</p>
+                        <span className="done"></span>
+                        <a className="linkGithub" href={project.gitlink} rel="noreferrer" target="_blank">
+                           ver no github 
+                           <span className="material-symbols-outlined">open_in_new</span>
+                        </a>
+                     </div>
+                  )
+                 })
+               }
+               
+               <div class="seeMoreAtGithub" tabindex="0">
                   <div>
-                     <a href={projects.map(i => i.gitlink)} rel="noreferrer" target="_blank">
-                        <img src={`/assets/imagens/${projects.map(i => i.img)}}`} alt="foto dos projeto" />
-                     </a>
+                     <ion-icon name="logo-github"></ion-icon>
                   </div>
-                  <p>{projects.map(i => i.name)}</p>
-                  <span className="done"></span>
-                  <a className="linkGithub" href={projects.map(i => i.gitlink)} rel="noreferrer" target="_blank">
-                     ver no github
-                     <span className="material-symbols-outlined">open_in_new</span>
+                  <a href="https://github.com/EaiPh/" rel="noreferrer" target="_blank" tabindex="0">
+                     <div>
+                        <strong>veja mais</strong>
+                        no GitHub 
+                        <span class="material-symbols-outlined">open_in_new</span>
+                     </div>
                   </a>
                </div>
 
             </div>
             <div>
-               <ion-icon className="arrows" id="arrowLeft" name="arrow-back-circle-outline"></ion-icon>
+               <ion-icon className="arrows" id="arrowRight" name="arrow-forward-circle-outline"></ion-icon>
             </div>
 
          </div>

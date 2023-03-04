@@ -23,5 +23,5 @@ export const projects= [
         {img:"pag-de-captura-img.png", name:"Página de captura", gitlink:"https://github.com/EaiPh/p-gina-de-captura-"},
         {img:"calculadora-img.png", name:"Calculator App", gitlink:"https://github.com/EaiPh/calculator-App"},
         {img:"calculadora-de-gorjetas-img.png", name:"Calculadora de gorjetas", gitlink:"https://github.com/EaiPh/tip-calculator"},
-        {img:"loginPage-img.png", name:"Página de loginh", gitlink:"https://github.com/EaiPh/P-gina-de-login"}
+        {img:"loginPage-img.png", name:"Página de login", gitlink:"https://github.com/EaiPh/P-gina-de-login"}
     ]

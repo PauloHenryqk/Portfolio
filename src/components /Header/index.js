@@ -1,4 +1,3 @@
-//import React, { Component } from "react"
 import { HeaderStyle } from "./style"
 
 function Header() {
@@ -34,7 +33,7 @@ function Header() {
            </nav>
            
            <div id="profilePicture" tabindex="0">
-                <img id="picture" src="../../assets/images/profilePicture.png" alt="foto de perfil" />
+               <img id="picture" src="../../assets/images/profilePicture.png" alt="foto de perfil" />
            </div>
 
            <ion-icon id="sideShortCut" name="reorder-three-outline" tabindex="0"></ion-icon>
