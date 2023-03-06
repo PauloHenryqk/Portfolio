@@ -30,7 +30,7 @@ function Main() {
             <section>
                <div className="title">Certificação</div>
                <div>
-                  <img src="/assets/imagens/formation.png" alt="foto de formação" />
+                  <img src="./assets/images/formation.png" alt="foto de formação" />
                   <p>Durante o curso coloquei em prática todo o meu conhecimento técnico em projetos práticos,
                   que me desafiaram e me fizeram buscar diferentes formas de resolver determinado problema. </p>
                </div>
@@ -38,7 +38,7 @@ function Main() {
             <section>
                <div className="title"><strong>Diferencias</strong></div>
                <div>
-                  <img src="/assets/imagens/diferenciais.png" alt="foto de lâmpada" />
+                  <img src="./assets/images/diferenciais.png" alt="foto de lâmpada" />
                   <p>Me diferencio porque amo estudar e aprender mais sobre tecnologia,
                   sou dedicado e quero evoluir a todo momento, cada vez mais e mais,
                   sempre buscando o melhor de mim mesmo.</p>
@@ -54,7 +54,7 @@ function Main() {
                   return ( 
                      <div key={index} className="card">
                         <div id={day.name}>
-                           <img src={`../../assets/imagens/${day.img}`} alt="foto de coisas que faço diarimente" />
+                           <img src={`./assets/images/${day.img}`} alt="foto de coisas que faço diarimente" />
                            <div>{day.name}</div>
                         </div>
                      </div>
@@ -75,7 +75,7 @@ function Main() {
                      <div key={index} className="projetos" tabindex="0">
                         <div>
                            <a href={project.gitlink} rel="noreferrer" target="_blank">
-                              <img src={`/assets/imagens/${project.img}`} alt="foto dos projeto" />
+                              <img src={`./assets/images/${project.img}`} alt="foto dos projeto" />
                            </a>
                         </div>
                         <p>{project.name}</p>

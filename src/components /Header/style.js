@@ -5,7 +5,7 @@ export const HeaderStyle = styled.header `
 
    height: 85vh;
    transition: .5s;
-   background-image: url('../../assets/images/background-image1.jpg');
+   background-image: url('./assets/images/background-image1.jpg');
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
@@ -24,7 +24,9 @@ export const HeaderStyle = styled.header `
    }
 
    #socialMedias li {
-      display: inline;
+      margin: 0.6rem;
+      display: inline-block;
+      list-style: none;
    }
    
    a {
@@ -33,14 +35,13 @@ export const HeaderStyle = styled.header `
    }
 
    a:visited {
-      color: darkred;
+      color: #9350DE;
    }
 
    .socialMediasIcon {
       width: 1.8rem;
       height: 1.8rem;
       color: white;
-      margin: .6rem;
    }
    
    #profilePicture {

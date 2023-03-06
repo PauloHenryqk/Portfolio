@@ -1,12 +1,11 @@
 import styled from "styled-components"
 
 export const FooterStyle = styled.footer`
-    footer {
-       margin-top: 3rem;
-       color: white;
-       border-top: 1px solid #dbdcde;
-       background-color: #616266;
-    }
+
+     margin-top: 3rem;
+     color: white;
+     border-top: 1px solid #dbdcde;
+     background-color: #616266;
 
     .contact {
        width: 80vw;
