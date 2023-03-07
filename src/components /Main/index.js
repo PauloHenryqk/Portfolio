@@ -53,10 +53,10 @@ function Main() {
                { daily.map((day, index) => {
                   return ( 
                      <div key={index} className="card">
-                        <div id={day.name}>
+                        <div id={day.id}>
                            <img src={`./assets/images/${day.img}`} alt="foto de coisas que faço diarimente" />
-                           <div>{day.name}</div>
                         </div>
+                        <div>{day.name}</div>
                      </div>
                   )
                  })

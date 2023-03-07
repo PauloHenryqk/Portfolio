@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const HeaderStyle = styled.header `
-   color: #9350DE;
+  /* color: #9350DE; */
 
    height: 85vh;
    transition: .5s;
@@ -17,90 +17,95 @@ export const HeaderStyle = styled.header `
       align-items: center;
       gap: .6rem;
       border-bottom: 1px solid #dbdcde;
-   }
-
-   #socialMedias {
-      margin-right: 3.75rem;
-   }
-
-   #socialMedias li {
-      margin: 0.6rem;
-      display: inline-block;
-      list-style: none;
-   }
    
+      #socialMedias {
+         margin-right: 3.75rem;
+
+         li {
+            display: inline;
+            list-style: none;
+            margin: 10px;
+
+            a ion-icon {
+               font-size: 20px;
+               color: white;
+            }
+         }
+
+      }
+
+      #profilePicture {
+         position: absolute;
+         right: 3rem;
+      }
+
+      #profilePicture img {
+         width: 2rem;
+         border: 1.5px solid #fff;
+         border-radius: 50%;
+         cursor: pointer;
+      }
+
+      #sideShortCut {
+         width: 1.8rem;
+         height: 1.8rem;
+         margin: .6rem;
+         float: right;
+         color: white;
+      }
+
+      aside {
+         width: 0px;
+         height: 100vh;
+         overflow: hidden;
+         transition: .5s;
+         position: absolute;
+         top: 0;
+      }
+
+      .sideBar {
+         width: 18.7rem;
+         height: 100vh;
+         transition: .5s;
+         font-size: 1.5rem;
+         background-color: var(--secondary-color);
+      }
+
+      #closeBar {   
+         font-size: 2.5rem;
+         margin: .9rem 0rem 0rem .9rem;
+         color: var(--primary-color);
+      }
+
+      aside ul {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 1.2rem;
+         margin-top: 1.5rem;
+      }
+  
+      aside ul a:visited {
+         color: initial;
+      }
+
+      aside li {
+         list-style: none;
+      }
+   }
+
    a {
       text-decoration: none;
       color: var(--primary-color);
    }
 
    a:visited {
-      color: #9350DE;
+      color: darkred;
    }
 
-   .socialMediasIcon {
-      width: 1.8rem;
-      height: 1.8rem;
+   #presentation {
+      margin: 1.2rem 0rem 0rem 3rem;
       color: white;
-   }
-   
-   #profilePicture {
-      position: absolute;  
-      right: 3rem;
-   }
-
-   #profilePicture img {
-      width: 1.8rem;
-      border: 2px solid #fff;
-      border-radius: 50%;
-      cursor: pointer;
-   }
-
-   #sideShortCut {
-      width: 1.8rem;
-      height: 1.8rem;
-      margin: .6rem;
-      float: right;
-      color: #5B17B7;
-   }
-
-   aside {
-      width: 0px;
-      height: 100vh;
-      overflow: hidden;
-      transition: .5s;
-      position: absolute;
-      top: 0;
-   }
-
-   .sideBar {
-      width: 18.7rem;
-      height: 100vh;
-      transition: .5s;
-      font-size: 1.5rem;
-      background-color: var(--secondary-color);
-   }
-
-   #closeBar {
-      font-size: 2.5rem;
-      margin: .9rem 0rem 0rem .9rem;
-      color: var(--primary-color);
-   }
-
-   aside ul {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1.2rem;
-      margin-top: 1.5rem;
-   }
-
-   aside ul a:visited {
-      color: initial;
-   }
-
-   aside li {
-      list-style: none;
    }
 
 `;

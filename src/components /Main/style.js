@@ -23,32 +23,27 @@ export const MainStyle = styled.main `
       width: 100%;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: space-around;   
 
-      background-color: blue;
-   }
+      .cardTech {
+         width: 18.7rem;
+         height: 18.7rem;
+         padding: .6rem;
+         border: 1px solid #dbdcde;
+         margin: 1.5rem;
+         color: var(--primary-color);
+      }
 
-   .cardTech {
-      width: 18.7rem;
-      height: 18.7rem;
-      padding: .6rem;
-      border: 1px solid #dbdcde;
-      margin: 1.5rem;
-      /* flex: none; */
-      color: var(--primary-color);
+      .techName {
+         font-size: 1.5rem;
+         font-weight: bold;
+         text-align: center;
+         margin-bottom: 1.2rem;
+      }
 
-      background-color: red;
-   }
-
-   .techName {
-      font-size: 1.5rem;
-      font-weight: bold;
-      text-align: center;
-      margin-bottom: 1.2rem;
-   }
-
-   .cardTech p {
-      font-size: 1.2rem;
+      .cardTech p {
+         font-size: 1.2rem;
+      }
    }
 
    .row2 {
@@ -114,40 +109,40 @@ export const MainStyle = styled.main `
       width: 80vw;
       margin: 3.7rem auto;
       color: var(--primary-color);
-   }
+  
+      .container {
+         display: flex;
+         justify-content: space-around;
+         flex-wrap: wrap;
+      }
 
-   .container {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-   }
+      .card {
+         width: 12.5rem;
+         text-align: center;
+         padding: .6rem;
+      }
 
-   .card {
-      width: 12.5rem;
-      text-align: center;
-      padding: .6rem;
-   }
+      #imgSchool, #imgCourse, #imgEnglish {
+         width: 6.2rem;
+         height: 6.2rem;
+         border-radius: 50%;
+         margin: 0rem auto .6rem;
+         overflow: hidden;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         background-color: var(--secondary-color);
+      }
+      
+      #imgSchool img {
+         width: 3.7rem;
+         height: 3.7rem;
+      }
 
-   #imgSchool, #imgCourse, #imgEnglish {
-      width: 6.2rem;
-      height: 6.2rem;
-      border-radius: 50%;
-      margin: 0rem auto .6rem;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: var(--secondary-color);
-   }
-
-   #imgSchool img {
-      width: 3.7rem;
-      height: 3.7rem;
-   }
-
-   #imgCourse img {
-      width: 6.2rem;
-      height: 6.2rem;
+      #imgCourse img {
+         width: 6.2rem;
+         height: 6rem;
+      }
    }
 
    #whatIdone {

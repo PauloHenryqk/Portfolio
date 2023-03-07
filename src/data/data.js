@@ -8,9 +8,9 @@ export const knowledge= [
     ]
 
 export const daily= [
-        {img:"ensinoMedioImg.png", name:"Ensino médio"},
-        {img:"img-Curso.png", name:"Curso de Desenvolvimento web"},
-        {img:"worldImg.png", name:"Estudo Inglês"},
+        {img:"ensinoMedioImg.png", name:"Ensino médio", id:"imgSchool"},
+        {img:"img-Curso.png", name:"Curso de Desenvolvimento web", id:"imgCourse"},
+        {img:"worldImg.png", name:"Estudo Inglês", id:"imgEnglish"},
         {img:"x.x.png", name:"Leio livros"}
     ]
 
