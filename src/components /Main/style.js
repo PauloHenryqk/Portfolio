@@ -147,9 +147,6 @@ export const MainStyle = styled.main `
 
    #whatIdone {
       width: 100vw;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       gap: 1.2rem;
       color: var(--primary-color);
    }
@@ -157,6 +154,7 @@ export const MainStyle = styled.main `
    #containerProject {
       width: 50rem;
       height: 21.8rem;
+      margin: auto;
       display: flex;
       gap: .9rem;
       flex-flow: row nowrap;

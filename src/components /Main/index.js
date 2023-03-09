@@ -66,10 +66,10 @@ function Main() {
          <div id="whatIdone">
             
             <h2>Oque já fiz</h2>
-            <div>
-               <ion-icon className="arrows" id="arrowLeft" name="arrow-back-circle-outline"></ion-icon>
-            </div>
             <div id="containerProject">
+               <div>
+               <ion-icon className="arrows" id="arrowLeft" name="arrow-back-circle-outline"></ion-icon>
+               </div>
                { projects.map((project, index) => {
                   return ( 
                      <div key={index} className="projetos" tabindex="0">
@@ -101,10 +101,9 @@ function Main() {
                      </div>
                   </a>
                </div>
-
-            </div>
-            <div>
-               <ion-icon className="arrows" id="arrowRight" name="arrow-forward-circle-outline"></ion-icon>
+               <div>
+                  <ion-icon className="arrows" id="arrowRight" name="arrow-forward-circle-outline"></ion-icon>
+               </div>
             </div>
 
          </div>
