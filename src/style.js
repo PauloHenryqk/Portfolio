@@ -9,8 +9,8 @@ const GlobalStyle= createGlobalStyle `
    }
 
    :root {
-       --primary-color: #000;
-       --secondary-color: #f8f9fb;
+       --primary-color: #673AE7;
+       --secondary-color: #b5b5b5;
     }
 
 `

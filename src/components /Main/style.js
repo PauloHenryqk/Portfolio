@@ -143,6 +143,11 @@ export const MainStyle = styled.main `
          width: 6.2rem;
          height: 6rem;
       }
+
+      #booksImg img {
+         width: 6rem;
+         height: 6rem;
+      }
    }
 
    #whatIdone {

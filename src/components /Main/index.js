@@ -68,7 +68,7 @@ function Main() {
             <h2>Oque já fiz</h2>
             <div id="containerProject">
                <div>
-               <ion-icon className="arrows" id="arrowLeft" name="arrow-back-circle-outline"></ion-icon>
+                  <ion-icon className="arrows" id="arrowLeft" name="arrow-back-circle-outline"></ion-icon>
                </div>
                { projects.map((project, index) => {
                   return ( 
