@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 export const MainStyle = styled.main `
+   background-color: #1a1a1a;
    
    h1 {
       font-size: 2.8rem;
@@ -14,7 +15,7 @@ export const MainStyle = styled.main `
 
    h2 {
       font-size: 2rem;
-      margin: 3rem;
+      padding: 3rem;
       text-align: center;
       color: var(--primary-color);
    }
@@ -29,9 +30,13 @@ export const MainStyle = styled.main `
          width: 18.7rem;
          height: 18.7rem;
          padding: .6rem;
-         border: 1px solid #dbdcde;
+         border: 1.5px solid #000;
+         border-radius: 2rem;
          margin: 1.5rem;
          color: var(--primary-color);
+
+         background-color: #272727;
+         box-shadow: 1px 5px 5px #0d0d0d;
       }
 
       .techName {
@@ -86,9 +91,12 @@ export const MainStyle = styled.main `
    #certificationsAndDifferences section {
       width: 28rem;
       margin: 1.2rem;
-      border: 1px solid #dbdcde;
-      border-radius: 1.2rem 1.2rem 1.20rem 1.20rem;
+      border: 1.5px solid #000;
+      border-radius: 1.2rem;
       padding: .6rem;
+      background-color: #272727;
+
+      box-shadow: 1px 5px 5px #0d0d0d;
    }
 
    .title {
@@ -122,7 +130,7 @@ export const MainStyle = styled.main `
          padding: .6rem;
       }
 
-      #imgSchool, #imgCourse, #imgEnglish {
+      #imgSchool, #imgCourse, #imgEnglish, #booksImg {
          width: 6.2rem;
          height: 6.2rem;
          border-radius: 50%;
@@ -132,6 +140,7 @@ export const MainStyle = styled.main `
          justify-content: center;
          align-items: center;
          background-color: var(--secondary-color);
+         box-shadow: 0px 0px 7px #000;
       }
       
       #imgSchool img {
@@ -147,6 +156,7 @@ export const MainStyle = styled.main `
       #booksImg img {
          width: 6rem;
          height: 6rem;
+         box-shadow: 0px 0px 5px #000 ;
       }
    }
 
@@ -154,12 +164,14 @@ export const MainStyle = styled.main `
       width: 100vw;
       gap: 1.2rem;
       color: var(--primary-color);
+      padding: 3rem;
    }
 
    #containerProject {
       width: 50rem;
       height: 21.8rem;
       margin: auto;
+      position: relative;
       display: flex;
       gap: .9rem;
       flex-flow: row nowrap;
@@ -174,6 +186,7 @@ export const MainStyle = styled.main `
    .arrows {
       width: 4.3rem;
       height: 4.3rem;
+      position: absolute;
       color: var(--secondary-color);
       cursor: pointer;
       border-radius: 50%;
@@ -189,7 +202,8 @@ export const MainStyle = styled.main `
       height: 21.8rem;
       padding: 1.8rem .3rem .3rem;
       flex: none;
-      border: 1px solid #dbdcde;
+      border: 1.5px solid #000;
+      border-radius: 1rem;
       position: relative;
                                  
       background-color: var(--secondary-color);

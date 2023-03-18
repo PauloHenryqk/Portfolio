@@ -10,7 +10,7 @@ const GlobalStyle= createGlobalStyle `
 
    :root {
        --primary-color: #673AE7;
-       --secondary-color: #b5b5b5;
+       --secondary-color: #272727;
     }
 
 `
