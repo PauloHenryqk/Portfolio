@@ -89,7 +89,7 @@ function Main() {
                  })
                }
                
-               <div class="seeMoreAtGithub" tabindex="0">
+               <div className="seeMoreAtGithub" tabindex="0">
                   <div>
                      <ion-icon name="logo-github"></ion-icon>
                   </div>
@@ -97,7 +97,7 @@ function Main() {
                      <div>
                         <strong>veja mais</strong>
                         no GitHub 
-                        <span class="material-symbols-outlined">open_in_new</span>
+                        <span className="material-symbols-outlined">open_in_new</span>
                      </div>
                   </a>
                </div>
