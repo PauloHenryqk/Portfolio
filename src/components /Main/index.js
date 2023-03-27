@@ -19,7 +19,7 @@ function Main() {
                  })
                }
             </section>
-            <div id="seeMore" tabindex="0">
+            <div id="seeMore" tabIndex="0">
                veja mais
                <ion-icon name="chevron-down-outline"></ion-icon> 
             </div>
@@ -72,7 +72,7 @@ function Main() {
                </div>
                { projects.map((project, index) => {
                   return ( 
-                     <div key={index} className="projetos" tabindex="0">
+                     <div key={index} className="projetos" tabIndex="0">
                         <div>
                            <a href={project.gitlink} rel="noreferrer" target="_blank">
                               <img src={`./assets/images/${project.img}`} alt="foto dos projeto" />
@@ -89,11 +89,11 @@ function Main() {
                  })
                }
                
-               <div className="seeMoreAtGithub" tabindex="0">
+               <div className="seeMoreAtGithub" tabIndex="0">
                   <div>
                      <ion-icon name="logo-github"></ion-icon>
                   </div>
-                  <a href="https://github.com/EaiPh/" rel="noreferrer" target="_blank" tabindex="0">
+                  <a href="https://github.com/EaiPh/" rel="noreferrer" target="_blank" tabIndex="0">
                      <div>
                         <strong>veja mais</strong>
                         no GitHub 

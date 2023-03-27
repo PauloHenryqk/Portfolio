@@ -3,7 +3,7 @@ import { FooterStyle } from "./style"
 function Footer() {
     return (
         <FooterStyle>
-           <form action="https://gmail.us12.list-manage.com/subscribe/post?u=293c40808a3996973cdae368d&amp;id=54e6b8f429&amp;f_id=00cf7be0f0" class="contact validate" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_self">
+           <form action="https://gmail.us12.list-manage.com/subscribe/post?u=293c40808a3996973cdae368d&amp;id=54e6b8f429&amp;f_id=00cf7be0f0" className="contact validate" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" rel="noreferrer" target="_self">
 
               <div>
                  <label for="email">Email</label>
@@ -25,7 +25,7 @@ function Footer() {
               <input type="submit" name="btn" id="btn" value="Enviar" />
 
               <div id="area-hidden" aria-hidden="true">
-                 <input type="text" name="b_293c40808a3996973cdae368d_54e6b8f429" tabindex="-1" value="" />
+                 <input type="text" name="b_293c40808a3996973cdae368d_54e6b8f429" tabIndex="-1" value="" />
               </div>
            </form>
 
