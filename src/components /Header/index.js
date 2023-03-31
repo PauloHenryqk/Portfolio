@@ -1,6 +1,8 @@
 import { HeaderStyle } from "./style"
+import { sideBarSet } from "./script"
 
 function Header() {
+   
     return (
        <HeaderStyle>
            <nav>
@@ -34,10 +36,10 @@ function Header() {
                   <img id="picture" src="./assets/images/profilePicture.png" alt="foto de perfil" />
               </div>
 
-              <ion-icon id="sideShortCut" name="reorder-three-outline" tabIndex="0"></ion-icon>
+              <ion-icon onClick={sideBarSet.open} id="sideShortCut" name="reorder-three-outline" tabIndex="0"></ion-icon>
 
               <aside>
-                 <ion-icon id="closeBar" name="close-circle-outline" tabIndex="0"></ion-icon>
+                 <ion-icon onClick={sideBarSet.close} id="closeBar" name="close-circle-outline" tabIndex="0"></ion-icon>
                  <ul>
                     <li><a href="#hardSkills" tabIndex="0">HardSkills</a></li>
                     <li><a href="#certificationsAndDifferences" tabIndex="0">Certificações</a></li>
@@ -57,6 +59,7 @@ function Header() {
            </div>
 
        </HeaderStyle>
+
     )
 }
 

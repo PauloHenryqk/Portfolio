@@ -2,6 +2,7 @@ let picture= document.querySelector('#picture')
 let openSideBar= document.querySelector('#sideShortCut')
 let closeSideBar= document.querySelector('#closeBar')
 let aside= document.querySelector('#aside')
+
 let seeMore= document.querySelector('#seeMore')
 let carousel= document.querySelector('#containerProject')
 let rowsTechs= document.querySelectorAll('.row2')

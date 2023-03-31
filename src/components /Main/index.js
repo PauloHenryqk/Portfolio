@@ -1,5 +1,6 @@
 import { knowledge, daily, projects } from "../../data/data"
 import { MainStyle } from  "./style"
+import { hideElements, seeMore } from "./script"
 
 function Main() {
    return (
@@ -19,7 +20,7 @@ function Main() {
                  })
                }
             </section>
-            <div id="seeMore" tabIndex="0">
+            <div id="seeMore" onClick={seeMore} tabIndex="0">
                veja mais
                <ion-icon name="chevron-down-outline"></ion-icon> 
             </div>
@@ -60,8 +61,9 @@ function Main() {
                      </div>
                   )
                  })
+                 
                }
-            </div>
+            </div> 
          </div>
          <div id="whatIdone">
             
@@ -112,5 +114,7 @@ function Main() {
 
    )
 }
+
+hideElements()
 
 export default Main
