@@ -1,9 +1,39 @@
+import React, {useState, useEffect} from "react"
 import { HeaderStyle } from "./style"
-import { sideBarSet } from "./script"
+import { images, sideBarSet } from "./script"
 
 function Header() {
    
-    return (
+   const [image, setImage]= useState(0)
+         
+   console.log(image)
+
+   useEffect(()=> {
+
+      const header= document.querySelector("header")
+
+      header.style.transitionDuration= "0.5s"
+      header.style.backgroundImage= images[image]
+
+      console.log(image)
+
+   },[image])
+
+   const timer= setInterval( () => {
+      setImage((prevN) => {
+         prevN > 3 ? prevN = 0 : prevN++
+
+         return prevN
+      })
+
+      //console.log( "interval" )
+   }, 1000)
+
+   useEffect( ()=>{
+      timer
+   }, [])
+
+   return (
        <HeaderStyle>
            <nav>
 

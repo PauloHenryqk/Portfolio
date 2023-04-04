@@ -4,7 +4,6 @@ export const HeaderStyle = styled.header `
   /* color: #9350DE; */
 
    height: 85vh;
-   transition: .5s;
    background-image: url('./assets/images/background-image1.jpg');
    background-repeat: no-repeat;
    background-position: center;

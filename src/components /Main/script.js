@@ -6,7 +6,7 @@ const cards= document.getElementsByClassName("cardTech")
 console.log(cards)
 
 const hidden= cards.slice(3)
-
+// Object.keys(cards).map(pos =>cards[pos])
 console.log(hidden)
 
 hidden.forEach( (element) => {
