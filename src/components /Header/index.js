@@ -15,19 +15,19 @@ function Header() {
       header.style.transitionDuration= "0.5s"
       header.style.backgroundImage= images[image]
 
-      console.log(image)
+      console.log(header)
 
    },[image])
 
    const timer= setInterval( () => {
       setImage((prevN) => {
-         prevN > 3 ? prevN = 0 : prevN++
+         prevN === 4 ? prevN = 0 : prevN++
 
          return prevN
       })
 
       //console.log( "interval" )
-   }, 1000)
+   }, 5000)
 
    useEffect( ()=>{
       timer

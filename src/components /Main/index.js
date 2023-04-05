@@ -1,6 +1,6 @@
 import { knowledge, daily, projects } from "../../data/data"
 import { MainStyle } from  "./style"
-import { hideElements, seeMore } from "./script"
+import { hideElements, seeMore, arrows } from "./script"
 
 function Main() {
    return (
@@ -70,7 +70,7 @@ function Main() {
             <h2>Oque já fiz</h2>
             <div id="containerProject">
                <div>
-                  <ion-icon className="arrows" id="arrowLeft" name="arrow-back-circle-outline"></ion-icon>
+                  <ion-icon onClick={arrows.scrollLeft} className="arrows" id="arrowLeft" name="arrow-back-circle-outline"></ion-icon>
                </div>
                { projects.map((project, index) => {
                   return ( 
@@ -104,7 +104,7 @@ function Main() {
                   </a>
                </div>
                <div>
-                  <ion-icon className="arrows" id="arrowRight" name="arrow-forward-circle-outline"></ion-icon>
+                  <ion-icon onClick={arrows.scrollRight} className="arrows" id="arrowRight" name="arrow-forward-circle-outline"></ion-icon>
                </div>
             </div>
 
@@ -115,6 +115,6 @@ function Main() {
    )
 }
 
-hideElements()
+hideElements()               
 
 export default Main
