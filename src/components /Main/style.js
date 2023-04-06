@@ -156,7 +156,7 @@ export const MainStyle = styled.main `
       #booksImg img {
          width: 6rem;
          height: 6rem;
-         box-shadow: 0px 0px 5px #000 ;
+         box-shadow: 0px 0px 5px #000;
       }
    }
 
@@ -165,36 +165,56 @@ export const MainStyle = styled.main `
       gap: 1.2rem;
       color: var(--primary-color);
       padding: 3rem;
+
+      display: grid;
+      grid-template-areas: "h2 h2 h2" 
+                           "arrL csel arrR";
+      justify-content: center;
+
+      h2 {
+         grid-area: h2;
+      }
    }
 
    #containerProject {
       width: 50rem;
       height: 21.8rem;
       margin: auto;
-      position: relative;
       display: flex;
       gap: .9rem;
       flex-flow: row nowrap;
       overflow: auto;
       scroll-behavior: smooth;
+
+      grid-area: csel;
    }
 
    #containerProject::-webkit-scrollbar {
       display: none;
    }
 
-   .arrows {
-      width: 4.3rem;
-      height: 4.3rem;
-      position: absolute;
+   #arrowLeft, #arrowRight { 
+      width: 3rem;
+      height: 3rem;
       color: var(--secondary-color);
+      background: linear-gradient( var(--primary-color), violet );
       cursor: pointer;
-      border-radius: 50%;
+      border-radius: 50%; 
+      opacity: 0.5;
+      position: relative;
+      top: 9rem;
+   }
+
+   #arrowLeft {
+      grid-area: arrL;
+   }
+   #arrowRight {
+      grid-area: arrR;
    }
 
    .arrows:hover {
       color: #dbdcde;
-      box-shadow: 0rem 0rem .6rem black;
+      opacity: 1;
    }
 
    .projetos {
