@@ -54,3 +54,29 @@ export const arrows= {
       right.scrollLeft+= 500
    }
 }
+
+// background animation
+/*function area() {
+   let main= document.querySelector("main")
+
+   let width= main.getBoundingClientRect().width
+   let height= main.getBoundingClientRect().height
+
+   let area= parseInt(width * height)
+   
+   return area
+}*/
+
+export function createBalls() {
+   let main= document.querySelector("main") 
+   //let spaces= area() / 400
+   let spaces= 10
+
+   for (let i=0; i < spaces; i++) {
+
+      let balls = document.createElement("div")
+      balls.classList= "balls"
+      main.appendChild(balls)
+
+   }
+}

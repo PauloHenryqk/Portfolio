@@ -2,7 +2,9 @@ import styled from "styled-components"
 
 export const MainStyle = styled.main `
    background-color: #1a1a1a;
-   
+   /*overflow: hidden;
+   position: relative;*/
+
    h1 {
       font-size: 2.8rem;
       margin-bottom: .4rem;
@@ -283,4 +285,28 @@ export const MainStyle = styled.main `
       transform: translate(-3px,20%);
    }
 
+   /*
+   .balls {
+      width: 10px;
+      height: 10px;
+      margin: 30px;
+      display: inline-block;
+      position: relative;
+
+      border-radius: 50%;
+      box-shadow: 0px 0px 10px violet;
+
+      background-color: purple;
+
+      animation: background 15s linear infinite; 
+   }
+
+   @keyframes background {
+      from {
+         transform: translateY(999rem);
+      }
+      to {
+         transform: translateY(0rem);
+      }
+   } */
 `;

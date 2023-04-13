@@ -104,7 +104,14 @@ export const HeaderStyle = styled.header `
 
    #presentation {
       margin: 1.2rem 0rem 0rem 3rem;
-      color: white;
+      color: deepskyblue;
+      font-size: 1.5rem;
+   }
+
+   #presentation small {
+      display: inline-block;
+      max-width: 30em;
+      font-size: 1rem;
    }
 
 `;

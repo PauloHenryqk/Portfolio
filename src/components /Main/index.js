@@ -6,8 +6,7 @@ function Main() {
    return (
 
       <MainStyle>
-        <div id="hardSkills">
-
+         <div id="hardSkills">
            <h2>Possuo conhecimento nas tecnologias</h2>
             <section className="techs">
                { knowledge.map((tech, index)=>{
