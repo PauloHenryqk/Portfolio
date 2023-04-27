@@ -82,10 +82,9 @@ function Header() {
            </nav>
            <div id="presentation">
               <h1>Paulo Henrique</h1>
-              <small>Sou Desenvolvedor web, iniciei meus estudos
-               de forma online e gratuita, comprei um curso e
-               estou estudando com foco em Desenvolvimento Web.
-               </small>
+              <small>
+                 Sou Desenvolvedor Web Frontend, atualmente estudo e faço projetos pessoais com o intuito de aprender e desenvolver novas habilidades técnicas.
+              </small>
            </div>
 
        </HeaderStyle>

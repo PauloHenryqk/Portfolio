@@ -48,8 +48,10 @@ export const MainStyle = styled.main `
          margin-bottom: 1.2rem;
       }
 
-      .cardTech p {
-         font-size: 1.2rem;
+      .cardTech {
+         ul li {
+           font-size: 1.2rem;
+         }
       }
    }
 

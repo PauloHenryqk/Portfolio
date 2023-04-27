@@ -1,6 +1,7 @@
 import { knowledge, daily, projects } from "../../data/data"
 import { MainStyle } from  "./style"
 import { hideElements, seeMore, arrows } from "./script"
+let msg;
 
 function Main() {
    return (
@@ -13,7 +14,15 @@ function Main() {
                   return (
                      <div key={index} id={tech.name} className="cardTech">
                         <div className="techName">{tech.name}</div>
-                        <p>{tech.msg}</p>
+                        <ul>
+                           {
+                             tech.msg.map( (txt, index) => {
+                                 return (
+                                    <li key={index}>{txt}</li>
+                                 )
+                              })
+                           }
+                        </ul>
                      </div>
                   )                   
                  })
@@ -31,7 +40,7 @@ function Main() {
                <div className="title">Certificação</div>
                <div>
                   <img src="./assets/images/formation.png" alt="foto de formação" />
-                  <p>Durante o curso coloquei em prática todo o meu conhecimento técnico em projetos práticos,
+                  <p>Durante o curso coloquei em prática todo o meu conhecimento técnico em projetos,
                   que me desafiaram e me fizeram buscar diferentes formas de resolver determinado problema. </p>
                </div>
             </section>
@@ -39,9 +48,7 @@ function Main() {
                <div className="title"><strong>Diferencias</strong></div>
                <div>
                   <img src="./assets/images/diferenciais.png" alt="foto de lâmpada" />
-                  <p>Me diferencio porque amo estudar e aprender mais sobre tecnologia,
-                  sou dedicado e quero evoluir a todo momento, cada vez mais e mais,
-                  sempre buscando o melhor de mim mesmo.</p>
+                  <p>Quero crescer profissionalmente, aprender, realizar sonhos e estou disposto a trabalhar o máximo possível para isso, evoluir pessoalmente, profissional, intelectualmente e desenvolver novas skils.</p>
                </div>
             </section>
 
@@ -81,7 +88,8 @@ function Main() {
                            </a>
                         </div>
                         <p>{project.name}</p>
-                        <span className="done"></span>
+                        <span className="done">
+                        </span>
                         <a className="linkGithub" href={project.gitlink} rel="noreferrer" target="_blank">
                            ver no github 
                            <span className="material-symbols-outlined">open_in_new</span>

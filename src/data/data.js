@@ -1,10 +1,10 @@
 export const knowledge= [
-        {name: "Html", msg:"sou capaz de estruturar uma página web para ser estilizada de forma fácil e eficiente, com tags semânticas e adicionar acessibilidade ao Web site..."},
-        {name: "Css", msg:"sou capaz de estilizar, criar animações e aplicar responsividade as páginasweb..."},
-        {name: "JavaScript", msg:"sou capaz de criar a dinâmica completa de um web site, quebrar grandes problemas em pequenas partes para melhor resolução..."},
-        {name: "Firebase", msg:"Estudando..."},
-        {name: "React", msg:"Estudando..."},
-        {name: "Node.js", msg:"Estudando..."}
+        {name: "Html", msg: ["xxxxx","yyyy", "zzzzzz"]},
+        {name: "Css", msg: ["xxxxxx","xxxxxxx"]},
+        {name: "JavaScript", msg: ["xxxxx","xxxxx"]},
+        {name: "Firebase", msg: ["ESTUDANDO..."]},
+        {name: "React", msg: ["ESTUDANDO..."]},
+        {name: "Node.js", msg: ["ESTUDANDO..."]}
     ]
 
 export const daily= [
@@ -15,7 +15,7 @@ export const daily= [
     ]
 
 export const projects= [
-        {img:"pomodoro-img.png ", name:"pomodoro", gitlink:"https://github.com/EaiPh/PomodoroApp-v2"},
+        {img:"pomodoro-img.png ", name:"pomodoro", gitlink:"https://github.com/EaiPh/PomodoroApp-v2", date:{year: 2022, month: 5}},
         {img:"jogo-da-memoria-img.png", name:"Jogo da memória", gitlink:"https://github.com/EaiPh/jogo-da-mem-ria-"},
         {img:"jogo-da-velha-img.png", name:"Jogo da velha", gitlink:"https://github.com/EaiPh/jogo-da-velha"},
         {img:"qrCode-img.png", name:"Link to Qr code", gitlink:"https://github.com/EaiPh/Qrcode"},

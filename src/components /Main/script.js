@@ -55,28 +55,24 @@ export const arrows= {
    }
 }
 
-// background animation
-/*function area() {
-   let main= document.querySelector("main")
+// how long has
+let currentYear= new Date().getFullYear()
+let currentMonth= new Date().getMonth()
 
-   let width= main.getBoundingClientRect().width
-   let height= main.getBoundingClientRect().height
+export const howLongHas = {
+   result: (month, year) => {
+      if (currentYear === year) {
+         return currentMonth - month;
 
-   let area= parseInt(width * height)
-   
-   return area
-}*/
+      } else if (currentYear - year === 1) {
+         let months = 12 - month + 1 + currentMonth;
+         return months;
 
-export function createBalls() {
-   let main= document.querySelector("main") 
-   //let spaces= area() / 400
-   let spaces= 10
+      } else {
+         let days = (currentYear - year + 1) * 12 * 30;
+         let decrementDays = (12 - currentMonth + 1 + month) * 30;
 
-   for (let i=0; i < spaces; i++) {
-
-      let balls = document.createElement("div")
-      balls.classList= "balls"
-      main.appendChild(balls)
-
-   }
-}
+         return parseInt((days - decrementDays) / 365);
+      }
+   },
+};

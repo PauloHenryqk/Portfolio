@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
 export const HeaderStyle = styled.header `
-  /* color: #9350DE; */
 
    height: 85vh;
    background-image: url('./assets/images/background-image1.jpg');
@@ -104,8 +103,17 @@ export const HeaderStyle = styled.header `
 
    #presentation {
       margin: 1.2rem 0rem 0rem 3rem;
-      color: deepskyblue;
-      font-size: 1.5rem;
+      font-size: 2.5rem;
+      color: #d8c7ff;
+      font-weight: bold;
+   }
+
+   #presentation h1 {
+      font-size: 3.5rem;
+      background: linear-gradient(to bottom, #9d82ee 33%, #d382ee 33%, #b882ee 34%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
    }
 
    #presentation small {
