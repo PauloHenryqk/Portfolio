@@ -39,6 +39,10 @@ export const MainStyle = styled.main `
 
          background-color: #272727;
          box-shadow: 1px 5px 5px #0d0d0d;
+
+         ul li {
+            list-style: inside;
+         }
       }
 
       .techName {
@@ -254,15 +258,17 @@ export const MainStyle = styled.main `
       display: block;
    }
 
-   .linkGithub {
-      font-size: 1rem;
+   .linkGithub, .seeMoreAtGithub a div {
+      font-size: 20px;
       position: absolute;
       bottom: .9rem;
+      left: 10%;
    }
 
    .seeMoreAtGithub {
       width: 12.5rem;
       height: 21.8rem;
+      position: relative;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -279,11 +285,11 @@ export const MainStyle = styled.main `
    }
 
    .seeMoreAtGithub a strong {
-      font-size: 1.5rem;
+      font-size: 2rem;
    }
 
    .material-symbols-outlined {
-      font-size: 1rem;
+      font-size: 20px;
       transform: translate(-3px,20%);
    }
 

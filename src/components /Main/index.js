@@ -1,7 +1,6 @@
 import { knowledge, daily, projects } from "../../data/data"
 import { MainStyle } from  "./style"
 import { hideElements, seeMore, arrows } from "./script"
-let msg;
 
 function Main() {
    return (

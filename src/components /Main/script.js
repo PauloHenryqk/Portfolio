@@ -4,6 +4,7 @@ export async function hideElements() {
 const cards= document.getElementsByClassName("cardTech")
 
 console.log(cards)
+console.log( "element "+ cards.Html)
 
 const hidden= cards.slice(3)
 // Object.keys(cards).map(pos =>cards[pos])
