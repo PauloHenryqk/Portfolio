@@ -30,7 +30,7 @@ function Header() {
    }, 5000)
 
    useEffect( ()=>{
-      timer
+      timer()
    }, [])
 
    return (

@@ -1,9 +1,9 @@
 export const knowledge= [
-        {name: "Html", msg: ["xxxxx","yyyy", "zzzzzz"]},
-        {name: "Css", msg: ["xxxxxx","xxxxxxx"]},
-        {name: "JavaScript", msg: ["xxxxx","xxxxx"]},
-        {name: "Firebase", msg: ["ESTUDANDO..."]},
-        {name: "React", msg: ["ESTUDANDO..."]},
+        {name: "Html", msg: ["Estruturação de páginas;","Estruturação de páginas para facilitar a estilização;", "tags semânticas;", "Acessibilidade."]},
+        {name: "Css", msg: ["Estilização de páginas;","animações;", "responsividade."]},
+        {name: "JavaScript", msg: ["Dinâmica do website;","manipulação de elementos DOM;", "Algoritmo."]},
+        {name: "Firebase", msg: ["Coleções de documentos;", "Leitura de dados;", "Envio de dados."]},
+        {name: "React", msg: ["Componentes;", "Jsx."]},
         {name: "Node.js", msg: ["ESTUDANDO..."]}
     ]
 

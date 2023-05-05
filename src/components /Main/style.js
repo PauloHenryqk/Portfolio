@@ -42,6 +42,7 @@ export const MainStyle = styled.main `
 
          ul li {
             list-style: inside;
+            padding: 5px;
          }
       }
 
