@@ -3,15 +3,16 @@ const visible= []
 export async function hideElements() {
 const cards= document.getElementsByClassName("cardTech")
 
-//console.log(Array(cards))
 console.log(cards)
 
-const hidden= cards.slice(3)
-// Object.keys(cards).map(pos =>cards[pos])
-console.log(hidden)
+const cardsInst= new Array(...cards)
+console.log(cardsInst)
+
+const hidden= cardsInst.slice(3)
+console.log("hidden "+hidden)
 
 hidden.forEach( (element) => {
-    element.setAttribute("hidden")
+   element.setAttribute("hidden")
 })
 
 const rows= parseInt(hidden.length / 3)
