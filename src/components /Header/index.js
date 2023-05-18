@@ -5,8 +5,6 @@ import { images, sideBarSet } from "./script"
 function Header() {
    
    const [image, setImage]= useState(0)
-         
-   console.log(image)
 
    useEffect(()=> {
 
@@ -19,18 +17,15 @@ function Header() {
 
    },[image])
 
-   const timer= setInterval( () => {
-      setImage((prevN) => {
-         prevN === 4 ? prevN = 0 : prevN++
-
-         return prevN
-      })
-
-      //console.log( "interval" )
-   }, 5000)
-
    useEffect( ()=>{
-      timer
+      setInterval( () => {
+         setImage((prevN) => {
+            prevN === 4 ? prevN = 0 : prevN++
+
+            return prevN
+         })
+
+      }, 1000)  
    }, [])
 
    return (
